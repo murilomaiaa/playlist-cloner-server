@@ -1,0 +1,66 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js
+
+PATH: 
+  /home/mrlmaia/.zinit/polaris/sbin:/home/mrlmaia/.zinit/polaris/bin:/home/mrlmaia/.zinit/polaris/usr/sbin:/home/mrlmaia/.zinit/polaris/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/mrlmaia/Android/Sdk/emulator:/home/mrlmaia/Android/Sdk/tools:/home/mrlmaia/Android/Sdk/tools/bin:/home/mrlmaia/Android/Sdk/platform-tools:/home/mrlmaia/android-studio/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.18.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/mrlmaia/spotube-alfa/backend/package.json: Unexpected token } in JSON at position 556
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "@playlist-cloner",
+    "version": "1.0.0",
+    "main": "src/server.ts",
+    "license": "MIT",
+    "scripts": {
+      "build": "tsc",
+      "dev:server": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts",
+      "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+    },
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "express-async-errors": "^3.1.1",
+      "jsonwebtoken": "^8.5.1",
+      "pg": "^8.2.1",
+      "reflect-metadata": "^0.1.13",
+      "ts-node-dev": "^1.0.0-pre.49",
+      "typeorm": "^0.2.25",
+    },
+    "devDependencies": {
+      "@types/cors": "^2.8.6",
+      "@types/express": "^4.17.6",
+      "@types/jsonwebtoken": "^8.5.0",
+      "@typescript-eslint/eslint-plugin": "^3.4.0",
+      "@typescript-eslint/parser": "^3.4.0",
+      "eslint": "^7.3.1",
+      "eslint-config-airbnb-base": "^14.2.0",
+      "eslint-config-prettier": "^6.10.1",
+      "eslint-import-resolver-typescript": "^2.0.0",
+      "eslint-plugin-import": "^2.22.0",
+      "eslint-plugin-prettier": "^3.1.2",
+      "prettier": "^2.0.5",
+      "typescript": "^3.9.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
